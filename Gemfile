@@ -43,6 +43,5 @@ end
 
 gem 'bootstrap-sass', '~> 3.0.3.0'
 
-# HTML abstraction language (Haml)
-gem 'haml', '~> 4.0.5'
-gem 'haml-rails', '~> 0.5'
+# Slim
+gem 'slim-rails'

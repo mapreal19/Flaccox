@@ -22,6 +22,15 @@ group :development, :test do
   gem 'figaro', '~> 0.7.0'     # env variables
 end
 
+group :test do
+  gem 'selenium-webdriver', '2.35.1'
+  gem 'capybara', '2.1.0'
+
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
+  gem 'launchy', '~> 2.4.2'
+end
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'

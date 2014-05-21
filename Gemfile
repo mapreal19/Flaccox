@@ -9,6 +9,9 @@ gem 'turbolinks', '~> 2.1.0'
 gem 'jbuilder', '~> 1.5.3'
 gem 'bcrypt-ruby', '~> 3.1.2'
 
+# Speeds up development
+gem 'spring',        group: :development
+
 group :doc do
   gem 'sdoc', require: false
 end
@@ -17,6 +20,15 @@ end
 group :development, :test do
   gem 'sqlite3', '~> 1.3.8'    # dev & test database
   gem 'figaro', '~> 0.7.0'     # env variables
+end
+
+group :test do
+  gem 'selenium-webdriver', '2.35.1'
+  gem 'capybara', '2.1.0'
+
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
+  gem 'launchy', '~> 2.4.2'
 end
 
 group :production do
@@ -40,6 +52,5 @@ end
 
 gem 'bootstrap-sass', '~> 3.0.3.0'
 
-# HTML abstraction language (Haml)
-gem 'haml', '~> 4.0.5'
-gem 'haml-rails', '~> 0.5'
+# Slim
+gem 'slim-rails'

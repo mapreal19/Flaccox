@@ -7,4 +7,7 @@ Feature: Static Pages
     When I go to the Home Page
     Then I should see the image "Flaccox"
 
+  Scenario: Contacto
+    When I go to "/contacto"
+
 

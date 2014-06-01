@@ -50,7 +50,8 @@ group :development, :test do
   gem 'rails_layout', '~> 0.5.11'  # Bootstrap 3 layout generator
 end
 
-gem 'bootstrap-sass', '~> 3.0.3.0'
+#gem 'bootstrap-sass', '~> 3.0.3.0'
+gem 'bootstrap-sass', '~> 3.1.1'
 
 # Slim
 gem 'slim-rails'

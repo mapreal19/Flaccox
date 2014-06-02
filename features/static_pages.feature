@@ -8,6 +8,6 @@ Feature: Static Pages
     Then I should see the image "Flaccox"
 
   Scenario: Contacto
-    When I go to "/contacto.html"
+    When I go to "/contacto"
 
 

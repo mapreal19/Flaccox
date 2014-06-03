@@ -1,5 +1,4 @@
 /* Scroll to Top */
-
 a.scroll-to-top {
   -moz-border-radius: 7px 7px 0 0;
   -moz-transition: all 0.3s;
@@ -21,20 +20,15 @@ a.scroll-to-top {
   transition: all 0.3s;
   width: 49px;
   z-index: 1040;
-}
 
-a.scroll-to-top:hover {
-  filter: alpha(opacity=100);
-  opacity: 1;
-}
+  &.visible:hover {
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
 
-a.scroll-to-top.visible:hover {
-  filter: alpha(opacity=100);
-  opacity: 1;
-}
+  &.visible {
+    filter: alpha(opacity=75);
+    opacity: 0.75;
+  }
 
-
-a.scroll-to-top.visible {
-  filter: alpha(opacity=75);
-  opacity: 0.75;
 }

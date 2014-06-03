@@ -3,9 +3,33 @@
  *
  *= require_self
  */
- /* @import "framework_and_overrides"; */
-
+ @import "framework_and_overrides";
  @import "bootstrap_readable_theme";
+ @import "scroll_to_top";
+
+
+.copyright {
+  font-size: 12px;
+  padding: 11px 0 7px;
+  background: #3e4753;
+  border-top: solid 1px #777; 
+}
+
+.copyright p {
+  color: #dadada;
+}
+
+.copyright p.copyright-space {
+  margin-top: 12px;
+}
+
+.copyright a {
+  margin: 0 5px;
+  color: #72c02c;
+}
+.copyright a:hover {
+  color: #a8f85f;
+}
 
 //***********************************************************
 // TESTING CLASSES
@@ -62,8 +86,8 @@ img{
   background-color: $navbar-inverse-bg;
   color: $navbar-inverse-color;
   */  
-  height: 100px;
-  margin-top: -100px;  
+  //height: 100px;
+  //margin-top: -100px;  
   letter-spacing: 1px;
   
   .footer-first-row{

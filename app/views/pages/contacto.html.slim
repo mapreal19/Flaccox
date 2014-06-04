@@ -2,5 +2,28 @@
 
 .container
 	.row
-		
+		= form_tag(incoming_mails_path) do 
+
+			= label_tag :name do 
+				| Nombre
+				span *
+			= text_field_tag :name, nil, required: true
+
+			= label_tag :email do
+				| Email
+				span *
+			= email_field_tag :email, nil, required: true
+
+			= label_tag :tlf do 
+				| Teléfono
+			= telephone_field_tag :tlf
+
+			= label_tag :subject do
+				| Tu mensaje
+				span *
+			= text_area_tag :subject, nil, required: true
+
+			= submit_tag 'Enviar'
+
+
 		| Contacto

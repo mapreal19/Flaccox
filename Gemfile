@@ -44,7 +44,7 @@ gem 'kaminari', '~> 0.15.0'
 gem 'friendly_id', '~> 5.0.2'
 
 # font-awesome
-gem 'font-awesome-sass', '~> 4.0.2'
+gem 'font-awesome-sass', '~> 4.1.0'
 
 # Bootstrap 3
 group :development, :test do

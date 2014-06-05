@@ -8,6 +8,10 @@
  @import "bootstrap_readable_theme";
  @import "scroll_to_top";
 
+.page-header {
+  margin-top: 0;
+}
+
 textarea {
   resize: vertical;
 }

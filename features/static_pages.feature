@@ -10,9 +10,16 @@ Feature: Static Pages
     Then I should see the image "Flaccox"
 
   Scenario: Servicios
-    When I go to "/servicios"
+    Given I am in the Home Page
+    When I follow the link "Servicios"
+    Then I should see the content "Nuestros Servicios"
 
-  Scenario: Servicios
+  Scenario: Equipo
+    Given I am in the Home Page
+    When I follow the link "Equipo"
+    Then I should see the content "Equipo"
+
+  Scenario: Equipo direct link
   	When I go to "/equipo"
 
   Scenario: Contacto

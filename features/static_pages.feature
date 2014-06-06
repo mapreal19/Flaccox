@@ -8,11 +8,13 @@ Feature: Static Pages
   Scenario: Home Page
     When I go to the Home Page
     Then I should see the image "Flaccox"
+    And I should see the link "Inicio" selected
 
   Scenario: Servicios
     Given I am in the Home Page
     When I follow the link "Servicios"
     Then I should see the content "Nuestros Servicios"
+    And I should see the link "Servicios" selected
 
   Scenario: Equipo
     Given I am in the Home Page

@@ -23,6 +23,10 @@ Then(/^I should see the content "(.+)"$/) do |content|
 	assert page.has_content?(content)
 end
 
+Then(/^I should see the link "(.*?)" selected$/) do |link|
+	page.find_link(link).first(:xpath, ".//..")[:class].include?('active')
+end
+
 Then(/^show me the page$/) do
   save_and_open_page
 end

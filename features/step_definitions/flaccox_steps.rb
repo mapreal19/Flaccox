@@ -7,7 +7,7 @@ When(/^I go to "(.+)"$/) do |url|
 end
 
 Then(/^I should see the image "(.+)"$/) do |image|
-  page.find(:xpath, "//img[@alt=\"#{image}\"]")
+  page.find(:xpath, "//img[@alt=\"#{image}\"]", :match => :first)
 end
 
 Then(/^show me the page$/) do

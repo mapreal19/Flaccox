@@ -7,7 +7,7 @@ Feature: Static Pages
 
   Scenario: Home Page
     When I go to the Home Page
-    #Then I should see the image "Flaccox"
+    Then I should see the image "Flaccox"
 
   Scenario: Servicios
     When I go to "/servicios"

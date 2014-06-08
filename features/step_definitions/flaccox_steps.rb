@@ -11,7 +11,7 @@ When(/^I go to "(.+)"$/) do |url|
 end
 
 When(/^I follow the link "(.+)"$/) do |link|
-	click_link 'Servicios'
+	click_link link
 end
 
 Then(/^I should see the image "(.+)"$/) do |image|
@@ -24,7 +24,13 @@ Then(/^I should see the content "(.+)"$/) do |content|
 end
 
 Then(/^I should see the link "(.*?)" selected$/) do |link|
-	page.find_link(link).first(:xpath, ".//..")[:class].include?('active')
+	begin
+		page.find('li.active', text: link)
+	rescue  
+		save_and_open_page
+		raise
+	end
+	#page.find_link(link).first(:xpath, ".//..")[:class].include?('active')
 end
 
 Then(/^show me the page$/) do

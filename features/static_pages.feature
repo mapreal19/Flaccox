@@ -20,6 +20,7 @@ Feature: Static Pages
     Given I am in the Home Page
     When I follow the link "Equipo"
     Then I should see the content "Equipo"
+    And I should see the link "Equipo" selected
 
   Scenario: Equipo direct link
   	When I go to "/equipo"

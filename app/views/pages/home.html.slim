@@ -11,9 +11,9 @@
 
   .row
     .col-xs-12.col-sm-6
-      h2 
-        i.fa.fa-tasks
-        = ' Mision'
+      h2
+        -# globe, flag, suitcase, lightbulb-o, road, bullhorn
+        = icon('globe', 'Mision') 
       p.text-justify
         |
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -25,8 +25,7 @@
 
     .col-xs-12.col-sm-6
       h2
-        i.fa.fa-desktop
-        = ' Vision'
+        = icon('lightbulb-o', 'Visión')
       p.text-justify
         |
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -38,8 +37,7 @@
   .row
     .col-xs-12.col-sm-4
       h2 
-        i.fa.fa-tasks
-        = ' Proyectos'
+        = icon('cogs', 'Proyectos') 
       p.text-justify
         |
           Actualmente la empresa cuenta con el primer producto “K-NUT” y en el proceso de desarrollo de otros dos. También como consultores en Biotecnología para grupo ingenia. La empresa busca crecer y por tanto ofrece precios muy económicos.          

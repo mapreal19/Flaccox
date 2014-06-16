@@ -5,24 +5,24 @@
     .col-lg-12
       .page-header
         h1 Nuestros Servicios
-
+  
   .row
-    .col-xs-12.col-sm-6
-      h2 
-        = icon('rocket', ' Consultoría Startup')
-      ul.list-unstyled
-        li Trámites constitución  
-        li Cuando patentar y cuando no
-        li Pactos sociales
-        li Plan de negocio
-        li Hoja de ruta
-        li Programación web
-    .col-xs-12.col-sm-6
-      h2
-        = icon('bullhorn', 'Consultoría de Marketing')
-      ul.list-unstyled
-        li Plan de Comunicación Integral
-        li Desarrollo del producto y fijación del precio
+    = render 'servicio', 
+    icon: 'rocket', 
+    heading: 'Consultoría Startup',
+    da_list: ['Trámites constitución', 
+      'Cuando patentar y cuando no',
+      'Pactos sociales', 
+      'Plan de negocio', 
+      'Hoja de ruta', 
+      'Programación web']
+
+    = render 'servicio', 
+    icon: 'bullhorn', 
+    heading: 'Consultoría de Marketing',
+    da_list: ['Plan de Comunicación Integral', 
+      'Desarrollo del producto y fijación del precio']
+
   .row
     .col-xs-12.col-sm-6
       h2 

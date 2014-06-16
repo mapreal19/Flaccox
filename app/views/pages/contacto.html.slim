@@ -1,6 +1,31 @@
 - title("Contacto")
 
 .container
-	.row
-		
+  .row
+    .col-lg-12
+      .page-header
+        h1 Contacto
+  .row
+    .col-lg-12
+      p.lead
+        | Póngase en contacto con nosotros a traves de nuestro
+        | &nbsp;
+        = mail_to 'Flaccox@flaccox.es', 'email'
 
+  .row
+    .col-lg-4
+      span.block
+        strong
+          = icon('map-marker', 'Direccion:')    
+        | Null
+      span.block
+        strong
+          = icon('phone', 'Tlf: ')    
+        | 
+      span.block
+        strong
+          = icon('envelope', 'Correo: ')    
+        | Null        
+
+
+      

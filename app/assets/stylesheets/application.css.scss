@@ -8,6 +8,10 @@
  @import "bootstrap_readable_theme";
  @import "scroll_to_top";
 
+.block {
+  display: block !important;
+}
+
 .page-header {
   margin-top: 0;
 }

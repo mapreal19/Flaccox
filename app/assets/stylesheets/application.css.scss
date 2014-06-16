@@ -1,12 +1,10 @@
-/*
- * Overwritten by RailsBricks
- *
- *= require_self
- */
- @import "colors";
- @import "framework_and_overrides";
- @import "bootstrap_readable_theme";
- @import "scroll_to_top";
+
+@import "colors";
+@import "framework_and_overrides";
+@import "bootstrap_readable_theme";
+@import "scroll_to_top";
+@import "carousel";
+
 
 .block {
   display: block !important;

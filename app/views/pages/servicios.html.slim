@@ -9,6 +9,7 @@
   .row
     = render 'servicio', 
     icon: 'rocket', 
+    class_icon: '',
     heading: 'Consultoría Startup',
     da_list: ['Trámites constitución', 
       'Cuando patentar y cuando no',
@@ -19,24 +20,27 @@
 
     = render 'servicio', 
     icon: 'bullhorn', 
+    class_icon: '',
     heading: 'Consultoría de Marketing',
     da_list: ['Plan de Comunicación Integral', 
       'Desarrollo del producto y fijación del precio']
 
   .row
-    .col-xs-12.col-sm-6
-      h2 
-        = icon('certificate', 'Consultoría de Propiedad Intelectual e Industrial')
-      ul.list-unstyled
-        li Búsqueda 
-        li Procedimiento de patentes
-        li Estrategia de patente internacional
-        li Análisis técnico de productos
-    .col-xs-12.col-sm-6
-      h2
-        = icon('money', 'Estudios de mercado', class: 'green-dollar')
-      ul.list-unstyled
-        li Identificación target group  
+    = render 'servicio', 
+    icon: 'certificate', 
+    class_icon: '',
+    heading: 'Consultoría de Propiedad Intelectual e Industrial',
+    da_list: ['Búsqueda', 
+        'Procedimiento de patentes',
+        'Estrategia de patente internacional',
+        'Análisis técnico de productos']
+    
+    = render 'servicio', 
+    icon: 'money',
+    class_icon: 'green-dollar', 
+    heading: 'Estudios de mercado',
+    da_list: ['Identificación target group '] 
+    
 
 
 

@@ -6,14 +6,13 @@
       .page-header
         h1 Contacto
   .row
-    .col-lg-12
+    .col-md-8
       p.lead
         | Póngase en contacto con nosotros a traves de nuestro email:
         | &nbsp;
         = mail_to 'Flaccox@flaccox.es', 'Flaccox@flaccox.es'
 
-  .row
-    .col-lg-4
+    .col-md-4
       span.block
         strong
           = icon('map-marker', 'Direccion:')    
@@ -25,7 +24,11 @@
       span.block
         strong
           = icon('envelope', 'Correo: ')    
-        | Null        
+        | Null
+      .iframe-rwd.margin-top-40
+        = render 'mapa'
+
+
 
 
       

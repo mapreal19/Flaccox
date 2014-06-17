@@ -6,6 +6,11 @@
 @import "scroll_to_top";
 @import "carousel";
 
+$nprogress-color: $fl-blue;
+@import 'nprogress';
+@import 'nprogress-bootstrap';
+
+
 .page-header {
   margin-top: 0;
 }

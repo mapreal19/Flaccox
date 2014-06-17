@@ -56,3 +56,5 @@ gem 'bootstrap-sass', '~> 3.1.1'
 
 # Slim
 gem 'slim-rails'
+
+gem 'nprogress-rails'

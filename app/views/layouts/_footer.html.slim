@@ -12,12 +12,14 @@ footer#footer
             br
             | Horario
       .col-xs-6
-      	ul.list-unstyled
-      		li
+        ul.list-unstyled
+          li
             = link_to 'https://twitter.com/flaccox' do
               i.fa.fa-twitter.twitter-color
               = ' Twitter'
-      		li = 'Linkedin'
+          li 
+            = link_to 'https://www.linkedin.com' do
+              = icon('linkedin', 'Linkedin', class: 'linkedin-color')
 
 
 

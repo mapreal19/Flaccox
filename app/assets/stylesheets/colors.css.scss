@@ -21,3 +21,7 @@ $green-dollar: #8C9566;
 .fl-blue {
 	color: $fl-blue;
 }
+
+@mixin border-orange {
+	border-bottom: 2px solid $fl-orange;
+}

@@ -18,10 +18,16 @@ $nprogress-color: $fl-blue;
 textarea {
   resize: vertical;
 }
+
+#footer {
+  border-top: 2px $fl-orange;
+  border-top-style: solid;
+}
+
 .copyright {
   font-size: 12px;
   padding: 11px 0 7px;
-  background: #3e4753;
+  background: $fl-blue;
   border-top: solid 1px #777; 
 }
 

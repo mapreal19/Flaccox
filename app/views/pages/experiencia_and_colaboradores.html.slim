@@ -6,8 +6,8 @@
       .page-header
         h1 Experiencia y Colaboradores
 
-  .row  
-    .col-sm-4
+  .row.margin-top-50  
+    .col-sm-4.col-sm-offset-2
       .thumbnail
         = image_tag('ceei.png')
         .caption
@@ -16,6 +16,14 @@
             = link_to 'http://ceeivalencia.emprenemjunts.es/', target: 'blank' do
               = icon('external-link', 'ceeivalencia.emprenemjunts.es')
 
+      .thumbnail
+        = image_tag('ingenia.png')
+        .caption
+          h3 Grupo ingenia
+          p 
+            = link_to 'http://www.grupoingenia.com/', target: 'blank' do
+              = icon('external-link', 'grupoingenia.com')
+      
     .col-sm-4
       .thumbnail
         = image_tag('tecontek.png')
@@ -25,11 +33,4 @@
             = link_to 'http://tecontek.com/', target: 'blank' do
               = icon('external-link', 'tecontek.com')
 
-    .col-sm-4
-      .thumbnail
-        = image_tag('ingenia.png')
-        .caption
-          h3 Grupo ingenia
-          p 
-            = link_to 'http://www.grupoingenia.com/', target: 'blank' do
-              = icon('external-link', 'grupoingenia.com')
+      

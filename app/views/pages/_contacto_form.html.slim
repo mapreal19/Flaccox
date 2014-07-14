@@ -1,0 +1,24 @@
+= form_tag(incoming_mails_path, role: 'form') do 
+	
+	.form-group
+		= label_tag :name do 
+			| Nombre
+			span *
+		= text_field_tag :name, nil, class: 'form-control', required: true
+	.form-group
+		= label_tag :email do
+			| Email
+			span *
+		= email_field_tag :email, nil, class: 'form-control', required: true
+	.form-group
+		= label_tag :tlf do 
+			| Teléfono
+		= telephone_field_tag :tlf, nil, class: 'form-control'
+	.form-group
+		= label_tag :subject do
+			| Tu mensaje
+			span *
+		= text_area_tag :subject, nil, class: 'form-control', required: true, rows: 6
+	= submit_tag 'Enviar', 
+	id: 'submit_email',
+	class: 'btn btn-primary'

@@ -10,4 +10,6 @@ Flaccox::Application.routes.draw do
   	get '/experiencia-colaboradores', to: :experiencia_and_colaboradores
   end
 
+  resources :incoming_mails, only: :create
+
 end

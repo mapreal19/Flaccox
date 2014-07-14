@@ -4,13 +4,11 @@ footer#footer
       .col-xs-6
         p
           small
-            | Flaccox S.L. España
+            = "Teléfono: "
+            = link_to number_to_phone('645764917'), 'tel:645764917'
             br
-            | Mail
-            br
-            | Tlf
-            br
-            | Horario
+            = "Correo: "
+            = mail_to 'flaccox@flaccox.es', 'flaccox@flaccox.es'
       .col-xs-6
         ul.list-unstyled
           li

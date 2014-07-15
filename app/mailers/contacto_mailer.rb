@@ -7,7 +7,7 @@ class ContactoMailer < ActionMailer::Base
 		@email = params[:email]
 		@tlf = params[:tlf]
 		@subject = params[:subject]
-		mail(to: 'flaccox@flaccox.es', from: params[:email], subject: 'Mensaje desde Flaccox.es')
+		mail(to: 'mapreal19@gmail.com', from: params[:email], subject: 'Mensaje desde Flaccox.es')
 	end
 
 end
